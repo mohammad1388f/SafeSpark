@@ -8,7 +8,21 @@
   A smart IoT-controlled ESP32-based system for safely triggering fireworks from a distance.
 </p>
 
-<h2>Features</h2>
+<h2>Table of Contents</h2>
+<ul>
+  <li><a href="#features">Features</a></li>
+  <li><a href="#prerequisites-installation">Prerequisites &amp; Installation</a></li>
+  <li><a href="#hardware-assembly-wiring">Hardware Assembly &amp; Wiring</a></li>
+  <li><a href="#software-setup-flashing">Software Setup &amp; Flashing</a></li>
+  <li><a href="#usage-guide">Usage Guide</a></li>
+  <li><a href="#video-tutorial">Video Tutorial</a></li>
+  <li><a href="#code">Code</a></li>
+  <li><a href="#contribution">Contribution</a></li>
+  <li><a href="#contact">Contact &amp; About the Developer</a></li>
+  <li><a href="#license">License</a></li>
+</ul>
+
+<h2 id="features">Features</h2>
 <ul>
   <li>
     <strong>Remote Fireworks Triggering:</strong>
@@ -48,7 +62,7 @@
   </li>
 </ul>
 
-<h2>Prerequisites & Installation</h2>
+<h2 id="prerequisites-installation">Prerequisites &amp; Installation</h2>
 <ul>
   <li>
     <strong>ESPRESSIF Flash Download Tools:</strong>
@@ -91,7 +105,7 @@
   </li>
 </ul>
 
-<h2>Hardware Assembly & Wiring</h2>
+<h2 id="hardware-assembly-wiring">Hardware Assembly &amp; Wiring</h2>
 
 <h3>Neopixel Connections</h3>
 <p>Refer to <strong>Slide1.PNG</strong> for the Neopixel wiring:</p>
@@ -161,11 +175,11 @@
   <img src="https://github.com/mohammad1388f/SafeSpark/blob/2.0/schematic/Slide5.jpg?raw=true" alt="Enclosure Example (Slide5.jpg)" style="max-width:600px;">
 </p>
 
-<h2>Software Setup & Flashing</h2>
+<h2 id="software-setup-flashing">Software Setup &amp; Flashing</h2>
 
 <h3>ESPRESSIF Flash Download Tools</h3>
 <p>
-  The ESPRESSIF Flash Download Tools is used to upload the binary file to the ESP32. It is fast and requires no special installation or configuration (its settings cannot be modified). The download link is provided in the <em>Prerequisites & Installation</em> section.
+  The ESPRESSIF Flash Download Tools is used to upload the binary file to the ESP32. It is fast and requires no special installation or configuration (its settings cannot be modified). The download link is provided in the <em>Prerequisites &amp; Installation</em> section.
 </p>
 <p>Installation Steps:</p>
 <ol>
@@ -192,7 +206,7 @@
 
 <h3>Arduino IDE</h3>
 <p>
-  The Arduino IDE allows you to modify code and settings. It requires the installation of the necessary libraries and the ESP32 Board Package. The installation link is provided in the <em>Prerequisites & Installation</em> section.
+  The Arduino IDE allows you to modify code and settings. It requires the installation of the necessary libraries and the ESP32 Board Package. The installation link is provided in the <em>Prerequisites &amp; Installation</em> section.
 </p>
 <p>Installation Steps:</p>
 <ol>
@@ -208,3 +222,77 @@
     Click on the "Upload" button to flash the code to the board.
   </li>
 </ol>
+
+<h2 id="usage-guide">Usage Guide</h2>
+<p>
+  Upon powering up the board, it automatically creates a WiFi access point with the default credentials:
+  <strong>SSID:</strong> BOOM &nbsp;&nbsp; <strong>Password:</strong> 12345678.
+</p>
+<p>
+  Connect to this access point and either use your router's management interface or open a web browser and navigate to <code>192.168.4.1</code> to access the management page. This page includes two main buttons: <strong>Settings</strong> and <strong>BOOM!</strong>.
+</p>
+<p>
+  In the <strong>Settings</strong> menu, you will find three options:
+</p>
+<ol>
+  <li>
+    <strong>Countdown:</strong> Set the duration for the countdown timer.
+  </li>
+  <li>
+    <strong>LED Delay:</strong> Specify the time (in seconds) before the countdown ends when the relay activates. This causes the Tengestan spring to heat up and the firework fuse to ignite, ensuring the fuse burns in sync with the countdown, audio, and visual effects.
+  </li>
+  <li>
+    <strong>LED On Duration:</strong> Set the time the relay remains on, allowing the Tengestan spring to stay hot long enough without causing damage.
+  </li>
+</ol>
+<p>
+  After configuring these settings, click the <strong>Save</strong> button to store them in the EEPROM.
+</p>
+<p>
+  <img src="https://github.com/mohammad1388f/SafeSpark/blob/2.0/Usage%20Guide/Slide1.png?raw=true" alt="Usage Guide - Settings" style="max-width:600px;">
+</p>
+<p>
+  In its normal, inactive state, the device displays a continuous rainbow effect. Pressing the <strong>BOOM!</strong> button initiates the countdown along with synchronized audio and visual effects. An orange blinking light on the Neopixel ring, synced with the sound, indicates the time remaining until the explosion. If the beep interval is 1 second, it signifies that 10 seconds or more remain; if less than 10 seconds remain, the interval decreases progressively until it reaches as low as 30 milliseconds. At the moment of explosion and immediately afterward, the Neopixel ring turns red for 2 seconds, then green for 4 seconds to indicate safety, before reverting back to the rainbow effect.
+</p>
+<p>
+  Example video: click <a href="https://example.com" target="_blank">here</a> to view.
+</p>
+
+<h2 id="video-tutorial">Video Tutorial</h2>
+<p>Coming soon ...</p>
+
+<h2 id="code">Code</h2>
+<p>Coming soon ...</p>
+
+<h2 id="contribution">Contribution</h2>
+<p>
+  You can submit pull requests, report issues, and discuss improvements in the Issues or Discussions sections. For special collaboration inquiries, please use the contact information provided below.
+</p>
+
+<h2 id="contact">Contact &amp; About the Developer</h2>
+<p>
+  <strong>Instagram:</strong>
+  <a href="https://instagram.com/mohammadavrcode" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/900px-Instagram_icon.png" alt="Instagram Logo" style="height:20px; vertical-align: middle;">
+    @mohammadavrcode
+  </a>
+</p>
+<p>
+  <strong>Telegram:</strong>
+  <a href="https://t.me/mohammadavrcode_en/2" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/768px-Telegram_logo.svg.png" alt="Telegram Logo" style="height:20px; vertical-align: middle;">
+    @mohammadavrcode_en
+  </a>
+</p>
+<p>
+  <strong>Twitter (X):</strong>
+  <a href="https://x.com/mohammadavrcode" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Twitter.svg/180px-Logo_of_Twitter.svg.png" alt="Twitter Logo" style="height:20px; vertical-align: middle;">
+    @mohammadavrcode
+  </a>
+</p>
+
+<h2 id="license">License</h2>
+<p>
+  This project is licensed under GPL 3.0. This license ensures that the software remains free and open-source, and that any modifications or redistributions are released under the same terms.
+</p>

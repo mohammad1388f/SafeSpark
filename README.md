@@ -158,5 +158,5 @@
 <h3>Enclosure Example</h3>
 <p>After completing the assembly, you can mount everything in an enclosure as demonstrated in <strong>Slide5.PNG</strong>:</p>
 <p>
-  <img src="https://github.com/mohammad1388f/SafeSpark/blob/2.0/schematic/Slide5.PNG?raw=true" alt="Enclosure Example (Slide5.PNG)" style="max-width:600px;">
+  <img src="https://github.com/mohammad1388f/SafeSpark/blob/2.0/schematic/Slide5.jpg?raw=true" alt="Enclosure Example (Slide5.jpg)" style="max-width:600px;">
 </p>

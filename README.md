@@ -160,3 +160,51 @@
 <p>
   <img src="https://github.com/mohammad1388f/SafeSpark/blob/2.0/schematic/Slide5.jpg?raw=true" alt="Enclosure Example (Slide5.jpg)" style="max-width:600px;">
 </p>
+
+<h2>Software Setup & Flashing</h2>
+
+<h3>ESPRESSIF Flash Download Tools</h3>
+<p>
+  The ESPRESSIF Flash Download Tools is used to upload the binary file to the ESP32. It is fast and requires no special installation or configuration (its settings cannot be modified). The download link is provided in the <em>Prerequisites & Installation</em> section.
+</p>
+<p>Installation Steps:</p>
+<ol>
+  <li>
+    Open the Flash Download Tools. The initial screen (shown below) allows you to select the target board.
+    <br>
+    <img src="https://github.com/mohammad1388f/SafeSpark/blob/2.0/Software%20Settings/Slide2.png?raw=true" alt="ESPRESSIF Flash Download Tools - Board Selection" style="max-width:600px;">
+  </li>
+  <li>
+    For version 2.0, which is developed exclusively for the ESP32, set the <strong>workmode</strong> to <em>develop</em> and the <strong>loadmode</strong> to <em>UART</em>.
+  </li>
+  <li>
+    The next image shows the software environment that must be configured according to each release.
+    <br>
+    <img src="https://github.com/mohammad1388f/SafeSpark/blob/2.0/Software%20Settings/Slide3.png?raw=true" alt="ESPRESSIF Flash Download Tools - Software Environment" style="max-width:600px;">
+  </li>
+  <li>
+    The latest release is currently available <a href="https://github.com/mohammad1388f/SafeSpark/releases/tag/2.0" target="_blank">here</a>.
+  </li>
+  <li>
+    Once all settings are configured, connect the board, press the Start button, and wait until the flashing process completes.
+  </li>
+</ol>
+
+<h3>Arduino IDE</h3>
+<p>
+  The Arduino IDE allows you to modify code and settings. It requires the installation of the necessary libraries and the ESP32 Board Package. The installation link is provided in the <em>Prerequisites & Installation</em> section.
+</p>
+<p>Installation Steps:</p>
+<ol>
+  <li>
+    Open the Arduino IDE and select the DOIT ESP32 DevKit V1 board.
+  </li>
+  <li>
+    Review the software environment as shown below:
+    <br>
+    <img src="https://github.com/mohammad1388f/SafeSpark/blob/2.0/Software%20Settings/Slide1.png?raw=true" alt="Arduino IDE Environment" style="max-width:600px;">
+  </li>
+  <li>
+    Click on the "Upload" button to flash the code to the board.
+  </li>
+</ol>
